@@ -1,0 +1,66 @@
+[
+    {
+      "id": 1,
+      "price": 999.99,
+      "category": "Smartphone",
+      "cover": "https://i.ibb.co.com/nPSjDcW/photo-1616410011236-7a42121dd981-q-80-w-3432-auto-format-fit-crop-ixlib-rb-4-0.jpg",
+      "type": "Flagship",
+      "brand": "Apple"
+    },
+    {
+      "id": 2,
+      "price": 499.99,
+      "category": "Smartphone",
+      "cover": "https://i.ibb.co.com/F3CmDym/photo-1691449808001-bb8c157f0094-q-80-w-3415-auto-format-fit-crop-ixlib-rb-4-0.jpg",
+      "type": "Mid-Range",
+      "brand": "Samsung"
+    },
+    {
+      "id": 3,
+      "price": 299.99,
+      "category": "Smartphone",
+      "cover": "https://i.ibb.co.com/B4Ry7sd/photo-1653051788073-ca21d5a20eb4-q-80-w-3387-auto-format-fit-crop-ixlib-rb-4-0.jpg",
+      "type": "Budget",
+      "brand": "Xiaomi"
+    },
+    {
+      "id": 4,
+      "price": 1499.99,
+      "category": "Smartphone",
+      "cover": "https://i.ibb.co.com/VWHJw3p/photo-1688529175497-3aa8010abf3b-q-80-w-3327-auto-format-fit-crop-ixlib-rb-4-0.jpg", 
+      "type": "Flagship",
+      "brand": "Google"
+    },
+    {
+      "id": 5,
+      "price": 399.99,
+      "category": "Smartphone",
+      "cover": "https://i.ibb.co.com/9Tb5TX9/photo-1533160772606-ba8c6a74d336-q-80-w-3270-auto-format-fit-crop-ixlib-rb-4-0.jpg",
+      "type": "Mid-Range",
+      "brand": "OnePlus"
+    },
+    {
+      "id": 6,
+      "price": 45,
+      "category": "Vintage phone",
+      "cover": "https://i.ibb.co.com/h2hgP6p/photo-1559312379-6eff3ba65888-q-80-w-3270-auto-format-fit-crop-ixlib-rb-4-0.jpg",
+      "type": "Budget",
+      "brand": "Nokia"
+    },
+    {
+      "id": 7,
+      "price": 799.99,
+      "category": "Smartphone",
+      "cover": "https://i.ibb.co.com/LQCMJCB/photo-1667453466805-75bbf36e8707-q-80-w-3432-auto-format-fit-crop-ixlib-rb-4-0.jpg",
+      "type": "Mid-Range",
+      "brand": "OPPO"
+    },
+    {
+      "id": 8,
+      "price": 1299.99,
+      "category": "Smartphone",
+      "cover": "https://i.ibb.co.com/z8QTtWk/photo-1612474521640-c390f92de485-q-80-w-2667-auto-format-fit-crop-ixlib-rb-4-0.jpg",
+      "type": "Flagship",
+      "brand": "Huawei"
+    }
+  ]
