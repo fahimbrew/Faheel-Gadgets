@@ -14,7 +14,7 @@ const Banner = () => {
       <p className="mb-5">
         You can buy best products in lowest price guranteed!
       </p>
-      <div><button className="btn ring-red-100 ring-2 bg-purple-400">Get Started</button></div>
+      <div><button className="btn text-white ring-red-100 ring-2 bg-purple-400">Get Started</button></div>
     </div>
   </div>
 </div>

@@ -1,4 +1,10 @@
-const Header = () => {
+import PropTypes from "prop-types";
+import Modal from "./Modal";
+
+const Header = ({addItems,addPrice,handleRemoveFromCart}) => {
+    const handleSubmit = (event)=>{
+        event.preventDefault();
+    }
     return (
         <div className="navbar bg-base-100">
         <div className="flex-1">
@@ -20,17 +26,44 @@ const Header = () => {
                     strokeWidth="2"
                     d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
                 </svg>
-                <span className="badge badge-sm indicator-item">8</span>
+                <span className="badge badge-sm indicator-item">{addItems.length}</span>
               </div>
             </div>
             <div
               tabIndex={0}
               className="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow">
               <div className="card-body">
-                <span className="text-lg font-bold">8 Items</span>
-                <span className="text-info">Subtotal: $999</span>
+                <span className="text-lg font-bold">{addItems.length} Items</span>
+                <span className="text-info">Subtotal: ${addPrice}</span>
                 <div className="card-actions">
-                  <button className="btn btn-primary btn-block">View cart</button>
+                  {/* modal starts */}
+                  {/* Open the modal using document.getElementById('ID').showModal() method */}
+<button className="btn bg-purple-300 text-white" onSubmit={handleSubmit} onClick={()=>
+    {document.getElementById('my_modal_1').showModal()
+    
+    }
+    
+    }>View Cart</button>
+<dialog id="my_modal_1" className="modal">
+  <div className="modal-box">
+    <h3 className="text-center underline text-2xl font-semibold">Items List</h3>
+  <div>
+    {
+      addItems.map((gadget,idx)=><Modal key={idx} 
+      gadget = {gadget}
+      handleRemoveFromCart = {handleRemoveFromCart}
+      ></Modal>)
+    }
+  </div>
+    <div className="modal-action w-full">
+      <form className="w-full" method="dialog">
+        {/* if there is a button in form, it will close the modal */}
+        <button className="btn w-full">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+                  {/* modal ends */}
                 </div>
               </div>
             </div>
@@ -61,4 +94,10 @@ const Header = () => {
     );
 };
 
+Header.propTypes = {
+    addItems : PropTypes.array,
+    addPrice : PropTypes.number,
+    handleToCart : PropTypes.func,
+    handleRemoveFromCart : PropTypes.func,
+}
 export default Header;

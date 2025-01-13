@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-const Gadget = ({gadget}) => {
+const Gadget = ({gadget,handleToCart}) => {
     // console.log(gadget);
     const {price,category,cover,type,brand} = gadget;
     return (
@@ -19,7 +19,7 @@ const Gadget = ({gadget}) => {
     </div>
     
     <div className="card-actions mt-3">
-      <button className="btn bg-red-300">Add to cart</button>
+      <button onClick={()=>handleToCart(gadget)} className="btn text-white bg-red-300">Add to cart</button>
     </div>
   </div>
 </div>
@@ -27,5 +27,6 @@ const Gadget = ({gadget}) => {
 };
 Gadget.propTypes = {
     gadget : PropTypes.object,
+    handleToCart : PropTypes.func,
 }
 export default Gadget;
